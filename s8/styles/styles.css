@@ -1,0 +1,162 @@
+body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #111; 
+    color: #eee;
+  }
+.hero-section {
+    background-color: #222;
+    color: white;
+    }
+  
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #000;
+  color: white;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  border-radius: 50px;
+}
+
+nav.links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav.links a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 30px;
+  border: 5px solid black;
+  margin: 0 auto;
+  margin-top: 30px;
+  
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+}
+
+/* Street & Park Banners */
+.street-banner, .selectpark {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 600px; /* fuller height */
+  border: 5px solid black;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.street-banner img, .selectpark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.street-banner h2, .selectpark h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.street-banner:hover h2, .selectpark:hover h2 {
+  background: rgba(0, 0, 0, 0.7);
+  transform: translate(-50%, -50%) scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #212828;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.social img {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
