@@ -1,91 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shredburd | Parks</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shredburd | Parks</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
-    <header>
-        <a id="logo" href="index.html">
-            <img class="logo" src="images/shredburg_logo.png" alt="shredburg logo">
-        </a>
-    </header>    
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="street.html">STREET</a>
-        <a href="parks.html">PARKS </a>
+  <header>
+    <a id="logo" href="index.html">
+      <img class="logo" src="images/shredburg_logo.png" alt="shredburg logo" />
+    </a>
+    <nav class="links">
+      <a href="index.html">HOME</a>
+      <a href="street.html">STREET</a>
+      <a href="parks.html">PARKS</a>
     </nav>
-    
-    <div class="title park">
-    <h1 class="title 1">Skateparks</h1>
-    <h4>Want a smooth, dedicated place to skate? Check out Rexburg’s skate parks! We provide details on features, surface conditions, best times to skate, and community feedback. Whether you're a beginner or a seasoned skater, these parks have something for you.</h4>
+  </header>
+
+  <section class="title-street">
+    <h1 class="title-1">Skateparks</h1>
+    <h4>
+      Want a smooth, dedicated place to skate? Check out Rexburg’s skateparks! We provide details on features, surface conditions, best times to skate, and community feedback. Whether you're a beginner or a seasoned skater, these parks have something for you.
+    </h4>
+  </section>
+
+  <section class="spot-section">
+    <h2 class="spot-title">Rexburg Skatepark</h2>
+    <div class="spot-container">
+      <div class="spot-text">
+        <p>
+          The Rexburg skatepark is a great place to learn and practice the basics. It includes small ledges, rails, and a bowl. It’s beginner-friendly but has its quirks — cracks in the concrete and some odd park design choices. Still, it's a solid local spot.
+        </p>
+        <p>
+          The vibe is chill and the community is respectful. The ledge at the bottom of the park is legendary — buttery smooth and perfect for locking in new tricks.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.0176229430313!2d-111.80252402433273!3d43.834732540671645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540bb5954d460b%3A0x3070b904030ad6c9!2sRexburg%20Skatepark!5e0!3m2!1sen!2sus!4v1743707133898!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>
+          <a href="https://www.google.com/maps/place/Rexburg+Skatepark/@43.834732,-111.804820" target="_blank">
+            📍 View on Google Maps
+          </a>
+        </p>
+      </div>
+
+      <div class="slideshow-container">
+        <img class="slide-img3" src="images/rexburgpark.jpg" alt="Rexburg 1">
+        <img class="slide-img3" src="images/rex2.jpg" alt="Rexburg 2">
+        <img class="slide-img3" src="images/rex3.jpg" alt="Rexburg 3">
+        <img class="slide-img3" src="images/rex4.jpg" alt="Rexburg 4">
+        <a class="prev" onclick="changeSlide3(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide3(1)">&#10095;</a>
+      </div>
     </div>
+  </section>
 
-    <section>
-        <div class="img-right">
-        <h2>Rexburg skatepark</h2>
-        <img src="images/rexburgpark.jpg" alt="rexburg picture">
-        <p>The rexburg skatepark is a great place to learn and practice the basics of skating. There are several small ledges and a few rails as well as a bowl for transitions skaters. The downside of this park is that it is pretty old. There are a few really big cracks and some of the design of the park is strange and not the most skatable. The people there are ussualy very respectful and kind. It brings people of all ages together to practice and improve their skating. Unfortanatly there is a lot of rfafiiti of some crude things, doesnt affect the skating though. One of the best parts of this park is the legde on the bottom of the park. It is one of the most butterly ledges you will ever skate. The perfect ledge for learning new tricks and practicing old ones.</p>
-        </div>
-        
-    <iframe class="rexburg-map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.0176265368987!2d-111.80482001565652!3d43.8347324661535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540bb5954d460b%3A0x3070b904030ad6c9!2sRexburg%20Skatepark!5e0!3m2!1sen!2sus!4v1741978131815!5m2!1sen!2sus" 
-        width="300" 
-        height="150" 
-        style="border:0;" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-    <p>
-        <a href="https://www.google.com/maps/place/Rexburg+Skatepark/@43.834732,-111.804820" target="_blank">
-            Pin
-        </a>
-    </p>
-    </section>
+  <section class="spot-section">
+    <h2 class="spot-title">Sugar City Skatepark</h2>
+    <div class="spot-container">
+      <div class="slideshow-container">
+        <img class="slide-img4" src="images//sugatcity.jpg" alt="Sugar 1">
+        <img class="slide-img4" src="images/sugar2.png" alt="Sugar 2">
+        <img class="slide-img4" src="images/sugar3.jpg" alt="Sugar 3">
+        <a class="prev" onclick="changeSlide4(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide4(1)">&#10095;</a>
+      </div>
 
-    <section>
-        <div class="img-left">
-        <h2>Sugar City Skatepark</h2>
-        <img src="images/sugatcity.jpg" alt="sugar picture">
-        <p>Sugar city skatepark is a small park that has grown a little in the past years. There is not a lot there but its a great place if you love flatrails and flatground skating. There are also a few quarter pipes and many pads. Over all it is a really fun place but definetly older and not the smoothest park. its less than a 10 minute drive from BYU-idahos campus making it very close if you are wanting to skate. Since the park is'nt the biggest is is almost always not busy, leaving you plenty of room for yourself. One other downside is that is is really close to a bigger road. THis causes some debree such as dirt and sand to get on the concrete making it not the smoothest surface to ride.</p>
-       </div>
-        
-    <iframe 
-       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.339084922796!2d-111.76007742433072!3d43.869525638413435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5353f70068626fb7%3A0x9df82d2d30c355b1!2sSugar%20City%20Skate%20Park!5e0!3m2!1sen!2sus!4v1741978306832!5m2!1sen!2sus" 
-       width="300" 
-       height="150" 
-       style="border:0;" 
-       loading="lazy" 
-       referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+      <div class="spot-text">
+        <p>
+          Sugar City’s skatepark is small but solid. It’s a great spot for flatground tricks, rails, and a few quarter pipes. Not the smoothest concrete, but it's close to BYU-Idaho and usually empty — perfect for solo sessions.
+        </p>
+        <p>
+          The only downside is debris from the nearby road. Watch for dust and sand buildup. Overall, a hidden gem if you like flowy runs with fewer people.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d719.0848058972009!2d-111.75814623039338!3d43.8695227650225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5353f70068626fb7%3A0x9df82d2d30c355b1!2sSugar%20City%20Skate%20Park!5e0!3m2!1sen!2sus!4v1743707101738!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>
+          <a href="https://www.google.com/maps/place/Sugar+City+Skate+Park/@43.869526,-111.760077" target="_blank">
+            📍 View on Google Maps
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <p>
-       <a href="https://www.google.com/maps/place/Sugar+City+Skate+Park/@43.869526,-111.760077" target="_blank">
-            Pin
-       </a> 
-    </p>
-    
-    </section>
-
-
-    
-    <footer>
-        <p>Shredburg &copy; 2025 - Samuel Owens</p>
+<footer>
+    <p>Shredburg &copy; 2025 - Samuel Owens</p>
     <p><a href="site-plan.html">Site Plan</a></p>
     <div class="social">
-        <a href="https://facebook.com" target="_blank"> 
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="instagram icon">
-        </a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="fb icon" />
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="twitter icon" />
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="instagram icon" />
+      </a>
     </div>
-    </footer>
-</body>
+  </footer>
 
+  <script>
+    let slideIndex3 = 0;
+    const slides3 = document.querySelectorAll(".slide-img3");
+    function showSlide3(index) {
+      slides3.forEach(slide => slide.style.display = "none");
+      slides3[index].style.display = "block";
+    }
+    function changeSlide3(n) {
+      slideIndex3 = (slideIndex3 + n + slides3.length) % slides3.length;
+      showSlide3(slideIndex3);
+    }
+    showSlide3(slideIndex3);
+
+  
+    let slideIndex4 = 0;
+    const slides4 = document.querySelectorAll(".slide-img4");
+    function showSlide4(index) {
+      slides4.forEach(slide => slide.style.display = "none");
+      slides4[index].style.display = "block";
+    }
+    function changeSlide4(n) {
+      slideIndex4 = (slideIndex4 + n + slides4.length) % slides4.length;
+      showSlide4(slideIndex4);
+    }
+    showSlide4(slideIndex4);
+  </script>
+</body>
 </html>

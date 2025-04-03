@@ -1,87 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shredburd | Street</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shredburd | Street</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
-    <header>
-        <a id="logo" href="index.html">
-            <img class="logo" src="images/shredburg_logo.png" alt="shredburg logo">
-        </a>
-    </header>    
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="street.html">STREET</a>
-        <a href="parks.html">PARKS</a>
-    </nav>
-    
-    <div class="title-street">
-    <h1 class="title-1">Street Spots</h1>
-    <h4>Discover the best street spots Rexburg has to offer! From ledges to stair sets, gaps to banks, this is where you’ll find the top street skating locations. Each spot includes difficulty rankings, photos, and skater-submitted tips.
-    </h4>
-    </div>
-
-    <section>
-        <div class="img-left">
-        <h2>KIWI LEDGE</h2>
-        <img src="images/kiwiledge.jpg" alt="KIWI picture">
-<p>The KIWI ledge is a perfect height and very smooth for grinds. The only problem is some cracks that make the run-up a little technical. There are usually a lot of people walking on the sidewalk, so remember to be respectful to everyone! It gets rough sometimes, so you will definitely want to bring wax for an ideal experience.</p>        
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d179.9147525967346!2d-111.7878654055308!3d43.82190827874116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z43.82190827874116,-111.7878654055308!5e0!3m2!1sen!2sus!4v1741976500690!5m2!1sen!2sus" 
-        width="400" 
-        height="250" 
-        style="border:0;" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    <p>
-            <a href="https://www.google.com/maps/place/43.821908,-111.787865" target="_blank">Pin</a>
-    </p>
-    
-    </section>
-
-    <section>
-        <div class="img-right">
-        <h2>5-6-7</h2>
-        <img src="images/5-6-7.jpg" alt="567 picture">
-        <p>5-6-7 are three stair sets right next to each other, which are perfect for practice. If you want to raise your confidence in stair skating, you can slowly level up here. One thing to worry about is the people. If you go during the day, there can be many students walking. This spot might be better for intermediate to advanced skaters but is still a great spot to learn. It would be best to go when there aren’t many students, so at night or later in the day. The run-up is not the longest, but it gives you enough room to hit it without struggle.</p> 
-       </div>
-        
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d179.9369451112991!2d-111.78403843289233!3d43.81454356191361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1741976953422!5m2!1sen!2sus" 
-        width="400" 
-        height="250" 
-        style="border:0;" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-    <p>
-    <a href="https://www.google.com/maps/place/43.81454356191361,-111.78403843289233" target="_blank">
-        Pin
+  <header>
+    <a id="logo" href="index.html">
+      <img class="logo" src="images/shredburg_logo.png" alt="shredburg logo" />
     </a>
-    </p>
-    </section>
+    <nav class="links">
+      <a id="home" href="index.html">HOME</a>
+      <a id="street" href="street.html">STREET</a>
+      <a id="parks" href="parks.html">PARKS</a>
+    </nav>
+  </header>
 
+  <section class="title-street">
+    <h1 class="title-1">Street Spots</h1>
+    <h4>
+      Discover the best street spots Rexburg has to offer! From ledges to stair sets, gaps to banks — each location includes photos, difficulty rankings, and skater-submitted tips.
+    </h4>
+  </section>
+
+  <section class="spot-section">
+    <h2 class="spot-title">KIWI LEDGE</h2>
+    <div class="spot-container">
+     
+      <div class="slideshow-container">
+        <img class="slide-img" src="images/kiwiledge.jpg" alt="Kiwi ledge 1">
+        <img class="slide-img" src="images/kiwi2.jpg" alt="Kiwi ledge 2">
+        <img class="slide-img" src="images/kiwi3.png" alt="Kiwi ledge 3">
+      
+        
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+
+      <div class="spot-text">
+      
+        <p>
+          The KIWI ledge is a perfect height for intermediate skaters and is super smooth for grinds. The ledge runs long and clean, making it great for learning tricks like 50-50s — but it is slightly tall, which can be intimidating for beginners.
+        </p>
+        <p>
+          The cracked sidewalk makes the run-up a bit sketchy, and daytime foot traffic can be a problem. Bring wax — this thing gets crusty fast.
+        </p>
+        <p>A classic go-to in Rexburg that’ll help you build confidence and style.</p>
     
-    <footer>
-        <p>Shredburg &copy; 2025 - Samuel Owens</p>
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2605.015153569171!2d-111.7904360243334!3d43.821920541502905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDQ5JzE4LjkiTiAxMTHCsDQ3JzE2LjMiVw!5e1!3m2!1sen!2sus!4v1743611660287!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>
+          <a href="https://www.google.com/maps/place/43.821908,-111.787865" target="_blank">
+            📍 View on Google Maps
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="spot-section">
+    <h2 class="spot-title">5-6-7 STAIRS</h2>
+  
+    <div class="spot-container reverse-grid">
+      <div class="spot-text">
+        <p>
+          5-6-7 are three stair sets lined up in a row — perfect for leveling up your stair game. Start small with the 5, build confidence with the 6, and then hit the 7 when you’re feeling it.
+        </p>
+        <p>
+          Foot traffic can be heavy during the day, especially around class change. Best session times: early morning or after sunset. Run-up is short but manageable for most setups.
+        </p>
+        <p><strong>A solid challenge spot with room to grow — progression zone unlocked.</strong></p>
+  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d695.6680781406112!2d-111.78404626406056!3d43.81451238977787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDQ4JzUyLjQiTiAxMTHCsDQ3JzAyLjUiVw!5e1!3m2!1sen!2sus!4v1743613728292!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+        <p>
+          <a href="https://www.google.com/maps/place/43.81454356191361,-111.78403843289233" target="_blank">
+            📍 View on Google Maps
+          </a>
+        </p>
+      </div>
+  
+      <div class="slideshow-container">
+        <img class="slide-img2" src="images/5-6-7.jpg" alt="567 view 1">
+        <img class="slide-img2" src="images/567_2.jpg" alt="567 view 2">
+        <img class="slide-img2" src="images/567_3.jpg" alt="567 view 3">
+  
+        <a class="prev" onclick="changeSlide2(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide2(1)">&#10095;</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>Shredburg &copy; 2025 - Samuel Owens</p>
     <p><a href="site-plan.html">Site Plan</a></p>
     <div class="social">
-        <a href="https://facebook.com" target="_blank"> 
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="instagram icon">
-        </a>
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="fb icon" />
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="twitter icon" />
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="instagram icon" />
+      </a>
     </div>
-    </footer>
+  </footer>
 </body>
-
 </html>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.querySelectorAll(".slide-img");
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.style.display = "none");
+    slides[index].style.display = "block";
+  }
+
+  function changeSlide(n) {
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    showSlide(slideIndex);
+  }
+
+  showSlide(slideIndex);
+</script>
+
+<script>
+  let slideIndex2 = 0;
+  const slides2 = document.querySelectorAll(".slide-img2");
+
+  function showSlide2(index) {
+    slides2.forEach(slide => slide.style.display = "none");
+    slides2[index].style.display = "block";
+  }
+
+  function changeSlide2(n) {
+    slideIndex2 = (slideIndex2 + n + slides2.length) % slides2.length;
+    showSlide2(slideIndex2);
+  }
+
+  showSlide2(slideIndex2);
+</script>
